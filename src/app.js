@@ -13,7 +13,7 @@ const allowedOrigins = (process.env.CLIENT_URL || 'http://localhost:5173')
 
 app.use(
   cors({
-    origin: 'https://usmantodos.netlify.app',
+    origin: allowedOrigins,
     credentials: true,
   })
 );
